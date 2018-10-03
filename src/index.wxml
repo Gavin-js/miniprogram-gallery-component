@@ -1,0 +1,9 @@
+<view class='gallery'>
+    <view class='main-image' wx:if='{{headerPhoto}}'>
+      <image src='{{headerPhoto}}' mode='aspectFill' binderror='handleError' data-name='headerPhoto'></image>
+    </view>
+    <view class='details-image'>
+      <image src='{{data.main_photo}}' mode='aspectFill'  binderror='handleError'></image>
+      <image wx:for='{{data.detail_photo}}' wx:key='{{index}}' src='{{item}}' mode='aspectFill'  binderror='handleError'></image>
+    </view>
+  </view>
