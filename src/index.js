@@ -12,7 +12,7 @@ Component({
   methods: {
     handleError({currentTarget}) {
       this.setData({
-        [currentTarget.dataset.name]: './loaderror.png',
+        [currentTarget.dataset.name]: './images/loaderror.png',
       })
     }
   }
